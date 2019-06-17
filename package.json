@@ -1,0 +1,39 @@
+{
+  "name": "kuzzle-plugin-auth-custom",
+  "version": "1.0.0",
+  "description": "Kuzzle plugin to log-in users",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "eslint lib test && npm run unit-testing",
+    "unit-testing": "nyc --reporter=text-summary --reporter=lcov mocha"
+  },
+  "keywords": [
+    "kuzzle",
+    "plugin",
+    "auth",
+    "passportjs"
+  ],
+  "author": {
+    "name": "Kévin Blondel"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "lodash.isstring": "^4.0.1",
+    "passport": "0.4.0",
+    "passport-strategy": "^1.0.0",
+    "semver": "^5.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "mocha": "6.0.1",
+    "nyc": "^13.3.0",
+    "should": "13.2.3",
+    "sinon": "^7.2.4"
+  },
+  "maintainers": [
+    {
+      "name": "kuzzle",
+      "email": "support@kuzzle.io"
+    }
+  ]
+}
